@@ -9,13 +9,13 @@ package Entidades;
  * @author yo
  */
 public class Producto {
-    private int codigo;
+    private int codigoProducto;
     private String descripcion;
     private double precio;
     private String categoria;
 
-    public Producto(int codigo, String descripcion, double precio, String categoria) {
-        this.codigo = codigo;
+    public Producto(int codigoProducto, String descripcion, double precio, String categoria) {
+        this.codigoProducto = codigoProducto;
         this.descripcion = descripcion;
         this.precio = precio;
         this.categoria = categoria;
@@ -27,12 +27,12 @@ public class Producto {
         this.categoria = categoria;
     }
 
-    public int getCodigo() {
-        return codigo;
+    public int getCodigoProducto() {
+        return codigoProducto;
     }
 
-    public void setCodigo(int codigo) {
-        this.codigo = codigo;
+    public void setCodigoProducto(int codigoProducto) {
+        this.codigoProducto = codigoProducto;
     }
 
     public String getDescripcion() {
@@ -58,6 +58,6 @@ public class Producto {
     public void setCategoria(String categoria) {
         this.categoria = categoria;
     }
-    
+
    
 }

@@ -12,30 +12,27 @@ import java.util.ArrayList;
  * @author yo
  */
 public class Venta {
-    private int codigo;
+    private int codigoVenta;
     private double monto;
     private LocalDate fecha;
-    private ArrayList<Producto>lista;
 
-    public Venta(int codigo, double monto, LocalDate fecha, ArrayList<Producto> lista) {
-        this.codigo = codigo;
+    public Venta(int codigoVenta, double monto, LocalDate fecha) {
+        this.codigoVenta = codigoVenta;
         this.monto = monto;
         this.fecha = fecha;
-        this.lista = lista;
     }
 
-    public Venta(double monto, LocalDate fecha, ArrayList<Producto> lista) {
+    public Venta(double monto, LocalDate fecha) {
         this.monto = monto;
         this.fecha = fecha;
-        this.lista = lista;
     }
 
-    public int getCodigo() {
-        return codigo;
+    public int getCodigoVenta() {
+        return codigoVenta;
     }
 
-    public void setCodigo(int codigo) {
-        this.codigo = codigo;
+    public void setCodigoVenta(int codigoVenta) {
+        this.codigoVenta = codigoVenta;
     }
 
     public double getMonto() {
@@ -54,13 +51,5 @@ public class Venta {
         this.fecha = fecha;
     }
 
-    public ArrayList<Producto> getLista() {
-        return lista;
-    }
-
-    public void setLista(ArrayList<Producto> lista) {
-        this.lista = lista;
-    }
-    
     
 }

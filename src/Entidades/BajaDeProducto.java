@@ -8,28 +8,31 @@ package Entidades;
  *
  * @author yo
  */
-public class Stock {
-    private int codigoStock;
+public class BajaDeProducto {
+    private int codigoBaja;
     private int codigoProducto;
-    private int cantidad;   
+    private int cantidad;
+    private String motivo;
 
-    public Stock(int codigoStock, int codigoProducto, int cantidad) {
-        this.codigoStock = codigoStock;
+    public BajaDeProducto(int codigoBaja, int codigoProducto, int cantidad, String motivo) {
+        this.codigoBaja = codigoBaja;
         this.codigoProducto = codigoProducto;
         this.cantidad = cantidad;
+        this.motivo = motivo;
     }
 
-    public Stock(int codigoProducto, int cantidad) {
+    public BajaDeProducto(int codigoProducto, int cantidad, String motivo) {
         this.codigoProducto = codigoProducto;
         this.cantidad = cantidad;
+        this.motivo = motivo;
     }
 
-    public int getCodigoStock() {
-        return codigoStock;
+    public int getCodigoBaja() {
+        return codigoBaja;
     }
 
-    public void setCodigoStock(int codigoStock) {
-        this.codigoStock = codigoStock;
+    public void setCodigoBaja(int codigoBaja) {
+        this.codigoBaja = codigoBaja;
     }
 
     public int getCodigoProducto() {
@@ -46,6 +49,14 @@ public class Stock {
 
     public void setCantidad(int cantidad) {
         this.cantidad = cantidad;
+    }
+
+    public String getMotivo() {
+        return motivo;
+    }
+
+    public void setMotivo(String motivo) {
+        this.motivo = motivo;
     }
     
     
