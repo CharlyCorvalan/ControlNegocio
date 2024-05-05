@@ -71,4 +71,24 @@ public class ProductoData {
             JOptionPane.showMessageDialog(null, "Error al elimimar producto");
         }
     }
+    public ArrayList<Producto> listarProductos(){
+        ArrayList<Producto> pro=new ArrayList<>();
+        String sentencia="select * from Producto where estado=1";
+        try {
+            PreparedStatement ps= conectar.prepareStatement(sentencia);
+            ResultSet rs=ps.executeQuery();
+            while(rs.next()){
+                Producto pro1=new Producto();
+                pro1.setCodigoProducto(rs.getInt("codigoProducto"));
+                pro1.setDescripcion(rs.getString("descripcion"));
+                pro1.setPrecio(rs.getDouble("precio"));
+                pro1.setCategoria(rs.getString("categoria"));
+                
+                pro.add(pro1);
+            }
+        } catch (SQLException ex) {
+            JOptionPane.showMessageDialog(null, "Error al acceder a la tabla Producto");
+        }
+        return pro;
+    }
 }
