@@ -32,6 +32,10 @@ public class OperacionCompra {
         this.fechaCompra = fechaCompra;
     }
 
+    public OperacionCompra() {
+    }
+    
+
     public int getCodigoOpCompra() {
         return codigoOpCompra;
     }

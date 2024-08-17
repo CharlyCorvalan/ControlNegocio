@@ -19,11 +19,11 @@ public class NewMain {
      */
     public static void main(String[] args) {
 //        Connection con=Conexion.conexion();
-        Producto pr=new Producto("Cargador tipo C",1700,"Cargador");
-        Producto  pr1=new Producto(4,"Cargador v8",1500,"Cargador cable");
-        ProductoData prData=new ProductoData();
-        
-        prData.eliminarProducto(pr1);
+//        Producto pr=new Producto("Cargador tipo C",1700,"Cargador");
+//        Producto  pr1=new Producto(4,"Cargador v8",1500,"Cargador cable");
+//        ProductoData prData=new ProductoData();
+//        
+//        prData.eliminarProducto(pr1);
     }
     
 }

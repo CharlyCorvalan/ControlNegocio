@@ -13,22 +13,33 @@ public class Producto {
     private String descripcion;
     private double precio;
     private String categoria;
+    private String marca;
 
     public Producto() {
     }
     
 
-    public Producto(int codigoProducto, String descripcion, double precio, String categoria) {
+    public Producto(int codigoProducto, String descripcion, double precio, String categoria,String marca) {
         this.codigoProducto = codigoProducto;
         this.descripcion = descripcion;
         this.precio = precio;
         this.categoria = categoria;
+        this.marca=marca;
     }
 
-    public Producto(String descripcion, double precio, String categoria) {
+    public Producto(String descripcion, double precio, String categoria,String marca) {
         this.descripcion = descripcion;
         this.precio = precio;
         this.categoria = categoria;
+        this.marca=marca;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
     }
 
     public int getCodigoProducto() {
